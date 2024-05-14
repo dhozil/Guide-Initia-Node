@@ -33,7 +33,6 @@ make install
 
 ### Init Moniker
 ```
-initiad config chain-id initiation-1
 initiad init YOUR-MONIKER --chain-id initiation-1
 ```
 
