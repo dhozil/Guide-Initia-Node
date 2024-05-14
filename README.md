@@ -56,7 +56,6 @@ sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "0.0025uinit"|g' $HOME/.in
 sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.initia/config/config.toml
 ```
 ```
-# Update peers in the config
 PEERS="093e1b89a498b6a8760ad2188fbda30a05e4f300@35.240.207.217:26656" && \
 sed -i -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.initia/config/config.toml
 ```
