@@ -1,6 +1,6 @@
 # Guide Initia Node
 
-# Faucet Link
+### Faucet Link
 https://faucet.testnet.initia.xyz/
 
 ## Testnet Setup Instructions
