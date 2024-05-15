@@ -27,7 +27,7 @@ go version
 ```
 git clone https://github.com/initia-labs/initia
 cd initia
-git checkout v0.2.11
+git checkout v0.2.12
 make install
 ```
 
@@ -133,7 +133,7 @@ initiad tx mstaking create-validator \
 
 ### Validator info
 ```
-initiad q staking validator $(initiad keys show $WALLET --bech val -a)
+initiad tx mstaking validator $(initiad keys show $WALLET --bech val -a)
 ```
 
 ### Node info
@@ -143,12 +143,12 @@ initiad status 2>&1 | jq
 
 ### Delegate to your validator
 ```
-initiad tx staking delegate $(initiad keys show wallet --bech val -a) 1000000uinit --from wallet -y
+initiad tx mstaking delegate $(initiad keys show wallet --bech val -a) 1000000uinit --from wallet --chain-id initiation-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.15uinit -y
 ```
 
 ### Unjail Validator 
 ```
-initiad tx slashing unjail --from wallet --fees=0.025uinit -y
+initiad tx slashing unjail --from wallet --chain-id initiation-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.15uinit -y
 ```
 
 ### Stop Node
