@@ -133,7 +133,7 @@ initiad tx mstaking create-validator \
 
 ### Validator info
 ```
-initiad tx mstaking validator $(initiad keys show $WALLET --bech val -a)
+initiad q mstaking validator $(initiad keys show wallet --bech val -a)
 ```
 
 ### Node info
