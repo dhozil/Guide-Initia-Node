@@ -124,7 +124,8 @@ initiad tx mstaking create-validator \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
     --commission-max-change-rate="0.01" \
-    --identity=<keybase_identity>
+    --identity=<keybase_identity> \
+    --fees=300000uinit
 ```
 
 ## Additional commands
