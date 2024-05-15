@@ -1,5 +1,8 @@
 # Guide Initia Node
 
+# Faucet Link
+https://faucet.testnet.initia.xyz/
+
 ## Testnet Setup Instructions
 
 ### Install dependencies
