@@ -177,4 +177,5 @@ sudo systemctl stop initiad.service
 sudo systemctl disable initiad.service
 sudo rm /etc/systemd/system/initiad.service
 rm -rf $HOME/.initia $HOME/initia
+rm -rf $HOME/initia
 ```
