@@ -131,7 +131,7 @@ initiad tx mstaking create-validator \
 
 ## Additional commands
 
-### To check Blocks left
+### Check Blocks left
 ```
 local_height=$(initiad status | jq -r .sync_info.latest_block_height); network_height=$(curl -s https://rpc-initia-testnet.trusted-point.com/status | jq -r .result.sync_info.latest_block_height); blocks_left=$((network_height - local_height)); echo "Your node height: $local_height"; echo "Network height: $network_height"; echo "Blocks left: $blocks_left"
 ```
