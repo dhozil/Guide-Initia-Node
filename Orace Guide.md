@@ -7,6 +7,12 @@ git clone https://github.com/skip-mev/slinky.git
 cd slinky
 git checkout v0.4.3
 ```
+```
+make build
+```
+```
+mv build/slinky /usr/local/bin/
+```
 
 ### Setting config and restart initia
 
