@@ -9,6 +9,7 @@ git checkout v0.4.3
 ```
 
 ### Setting config and restart initia
+
 ```
 sed -i '0,/^enabled *=/{//!b};:a;n;/^enabled *=/!ba;s|^enabled *=.*|enabled = "true"|' $HOME/.initia/config/app.toml && \
 sed -i -e 's|^oracle_address *=.*|oracle_address = "127.0.0.1:8080"|' $HOME/.initia/config/app.toml && \
@@ -19,6 +20,7 @@ sudo systemctl restart initiad
 ```
 
 ### Create service
+
 ```
 tee /etc/systemd/system/oracle.service > /dev/null <<EOF
 [Unit]
@@ -40,6 +42,7 @@ EOF
 ```
 
 ### Enable and start service
+
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable oracle
