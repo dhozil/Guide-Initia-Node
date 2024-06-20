@@ -151,6 +151,11 @@ initiad status 2>&1 | jq
 initiad tx mstaking delegate $(initiad keys show wallet --bech val -a) 1000000uinit --from wallet --chain-id initiation-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.15uinit -y
 ```
 
+### Vote Proposal
+```
+initiad tx gov vote 133 yes --from wallet --chain-id initiation-1 --gas=2000000 --fees=563000move/944f8dd8dc49f96c25fea9849f16436dcfa6d564eec802f3ef7f8b3ea85368ff
+```
+
 ### Unjail Validator 
 ```
 initiad tx slashing unjail --from wallet --chain-id initiation-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.15uinit -y
