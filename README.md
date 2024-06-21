@@ -30,7 +30,7 @@ go version
 ```
 git clone https://github.com/initia-labs/initia
 cd initia
-git checkout v0.2.15
+git checkout v0.2.19
 make install
 ```
 
@@ -125,8 +125,8 @@ initiad tx mstaking create-validator \
     --commission-max-rate="0.20" \
     --commission-max-change-rate="0.01" \
     --identity=<keybase_identity> \
-    --gas auto \
-    --fees 80000uinit
+    --gas=2000000
+    --fees=563000move/944f8dd8dc49f96c25fea9849f16436dcfa6d564eec802f3ef7f8b3ea85368ff
 ```
 
 ## Additional commands
@@ -148,7 +148,7 @@ initiad status 2>&1 | jq
 
 ### Delegate to your validator
 ```
-initiad tx mstaking delegate $(initiad keys show wallet --bech val -a) 1000000uinit --from wallet --chain-id initiation-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.15uinit -y
+initiad tx mstaking delegate $(initiad keys show wallet --bech val -a) 1000000uinit --from wallet --chain-id initiation-1 --gas=2000000 --fees=563000move/944f8dd8dc49f96c25fea9849f16436dcfa6d564eec802f3ef7f8b3ea85368ff
 ```
 
 ### Vote Proposal
@@ -158,7 +158,7 @@ initiad tx gov vote 133 yes --from wallet --chain-id initiation-1 --gas=2000000 
 
 ### Unjail Validator 
 ```
-initiad tx slashing unjail --from wallet --chain-id initiation-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.15uinit -y
+initiad tx slashing unjail --from wallet --chain-id initiation-1 --gas=2000000 --fees=563000move/944f8dd8dc49f96c25fea9849f16436dcfa6d564eec802f3ef7f8b3ea85368ff
 ```
 
 ### Stop Node
